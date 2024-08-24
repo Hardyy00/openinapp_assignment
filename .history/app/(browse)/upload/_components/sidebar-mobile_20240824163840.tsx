@@ -12,7 +12,7 @@ export const SidebarMobile: React.FC<SidebarMobileProps> = ({ onclose }) => {
     onclose(false);
   };
   return (
-    <div className="bg-black absolute inset-0 z-50">
+    <div className="bg-black absolute inset-0 bg-background z-50">
       <div className="absolute inset-0 z-[52] bg-background py-4 transition-all duration-300 flex flex-col gap-y-14 rounded-tr-[4rem] rounded-br-[4rem] h-full">
         <div className="flex items-center justify-between px-4">
           <div className="flex items-center space-x-4">
