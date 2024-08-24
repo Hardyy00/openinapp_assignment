@@ -81,8 +81,8 @@ export default function Page() {
                 <div>
                   <p
                     className={cn(
-                      "text-foreground max-sm:text-xs",
-                      matches && "text-muted-foreground"
+                      "text-foreground max-md:text-sm",
+                      matches && "text-muted-foreground max-sm:text-xs"
                     )}
                   >
                     Sign In with Google
@@ -110,8 +110,8 @@ export default function Page() {
               <div>
                 <p
                   className={cn(
-                    "text-foreground max-sm:text-xs",
-                    matches && "text-muted-foreground "
+                    "text-foreground",
+                    matches && "text-muted-foreground max-sm:text-xs"
                   )}
                 >
                   Sign In with Apple

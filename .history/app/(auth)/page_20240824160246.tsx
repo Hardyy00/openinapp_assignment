@@ -110,8 +110,8 @@ export default function Page() {
               <div>
                 <p
                   className={cn(
-                    "text-foreground max-sm:text-xs",
-                    matches && "text-muted-foreground "
+                    "text-foreground",
+                    matches && "text-muted-foreground max-sm:text-xs"
                   )}
                 >
                   Sign In with Apple
