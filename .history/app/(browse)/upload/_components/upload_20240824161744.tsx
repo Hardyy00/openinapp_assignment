@@ -31,13 +31,10 @@ export const Upload: React.FC<UploadProps> = ({ setCSV, isLoading }) => {
       return;
     }
 
-    if (file.type !== "text/csv") {
-      toast.error("File must be a csv.");
-      return;
-    }
-    setCSV(file);
+    // if(!file.)
+    // setCSV(file);
 
-    // console.log(file);
+    console.log(file);
   };
 
   return (
