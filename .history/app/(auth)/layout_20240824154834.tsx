@@ -16,9 +16,7 @@ export default async function Layout({
       <div className="w-full h-full flex flex-col lg:flex-row bg-background-muted">
         <Intro />
 
-        <div className="lg:flex-[0.7] flex-1  bg-background-muted">
-          {children}
-        </div>
+        <div className="flex-1 bg-background-muted">{children}</div>
       </div>
     </div>
   );

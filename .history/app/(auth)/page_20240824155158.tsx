@@ -59,8 +59,8 @@ export default function Page() {
 
   return (
     <div className="h-full md:p-8 py-8 px-4">
-      <div className="lg:px-8  py-6 h-full flex items-center justify-center">
-        <div className="flex flex-col gap-y-8 lg:gap-y-8 h-full max-sm:w-full">
+      <div className="lg:px-8  py-6 h-full flex items-center justify-center border border-black">
+        <div className="flex flex-col gap-y-8 lg:gap-y-8 h-full border border-black">
           <div className="space-y-2">
             <h1 className="text-foreground font-bold text-3xl">Sign In</h1>
             <p className="text-lg">Sign In to you account</p>
