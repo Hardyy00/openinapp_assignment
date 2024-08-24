@@ -36,6 +36,8 @@ export default function Page() {
     e.preventDefault();
     e.stopPropagation();
 
+    console.log("clicked");
+
     if (
       !email ||
       !email.length ||
@@ -59,8 +61,8 @@ export default function Page() {
       <div className="lg:px-8  py-6 h-full flex items-center justify-center">
         <div className="flex flex-col gap-y-8 lg:gap-y-8 h-full max-sm:w-full">
           <div className="space-y-2">
-            <h1 className="text-foreground font-bold text-3xl">Sign Up</h1>
-            <p className="text-lg">Sign Up to you account</p>
+            <h1 className="text-foreground font-bold text-3xl">Sign In</h1>
+            <p className="text-lg">Sign In to you account</p>
           </div>
 
           <div className="flex lg:gap-x-8 gap-x-2">
@@ -83,7 +85,7 @@ export default function Page() {
                       matches && "text-muted-foreground"
                     )}
                   >
-                    Sign up with Google
+                    Sign In with Google
                   </p>
                 </div>
               </button>
@@ -112,7 +114,7 @@ export default function Page() {
                     matches && "text-muted-foreground "
                   )}
                 >
-                  Sign up with Apple
+                  Sign In with Apple
                 </p>
               </div>
             </button>
@@ -153,17 +155,21 @@ export default function Page() {
                 />
               </div>
 
+              <div>
+                <p className="text-blue-500 font-semibold">Forgot Password?</p>
+              </div>
+
               <Button variant={"primary"} className="w-full rounded-xl">
-                Sign Up
+                Sign In
               </Button>
             </form>
           </div>
 
           <div className="text-center">
             <p className="text-muted-foreground">
-              Already have an account?{" "}
-              <Link href={"/"} className="text-blue-600 font-semibold">
-                Sign In
+              Don&apos;t have an account?{" "}
+              <Link href={"/sign-up"} className="text-blue-600 font-semibold">
+                Sign Up
               </Link>
             </p>
           </div>

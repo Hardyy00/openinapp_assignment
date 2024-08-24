@@ -153,6 +153,10 @@ export default function Page() {
                 />
               </div>
 
+              <div>
+                <p className="text-blue-500 font-semibold">Forgot Password?</p>
+              </div>
+
               <Button variant={"primary"} className="w-full rounded-xl">
                 Sign Up
               </Button>

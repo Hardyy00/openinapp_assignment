@@ -83,7 +83,7 @@ export default function Page() {
                       matches && "text-muted-foreground"
                     )}
                   >
-                    Sign up with Google
+                    Sign Up with Google
                   </p>
                 </div>
               </button>
@@ -112,7 +112,7 @@ export default function Page() {
                     matches && "text-muted-foreground "
                   )}
                 >
-                  Sign up with Apple
+                  Sign Up with Apple
                 </p>
               </div>
             </button>
@@ -153,6 +153,10 @@ export default function Page() {
                 />
               </div>
 
+              <div>
+                <p className="text-blue-500 font-semibold">Forgot Password?</p>
+              </div>
+
               <Button variant={"primary"} className="w-full rounded-xl">
                 Sign Up
               </Button>
@@ -162,8 +166,8 @@ export default function Page() {
           <div className="text-center">
             <p className="text-muted-foreground">
               Already have an account?{" "}
-              <Link href={"/"} className="text-blue-600 font-semibold">
-                Sign In
+              <Link href={"/sign-up"} className="text-blue-600 font-semibold">
+                Sign Up
               </Link>
             </p>
           </div>

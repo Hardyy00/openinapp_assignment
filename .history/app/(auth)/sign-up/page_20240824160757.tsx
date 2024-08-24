@@ -83,7 +83,7 @@ export default function Page() {
                       matches && "text-muted-foreground"
                     )}
                   >
-                    Sign up with Google
+                    Sign Up with Google
                   </p>
                 </div>
               </button>
@@ -151,6 +151,10 @@ export default function Page() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
+              </div>
+
+              <div>
+                <p className="text-blue-500 font-semibold">Forgot Password?</p>
               </div>
 
               <Button variant={"primary"} className="w-full rounded-xl">
