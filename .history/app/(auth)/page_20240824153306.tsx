@@ -66,16 +66,16 @@ export default function Page() {
             <p className="text-lg">Sign In to you account</p>
           </div>
 
-          <div className="flex lg:gap-x-8 gap-x-2">
+          <div className="flex lg:gap-x-8 gap-x-4">
             <form action={signin}>
               {" "}
               <button
                 className={cn(
-                  "flex items-center py-2 lg:px-6 md:px-4 px-2  lg:space-x-4 md:space-x-2 space-x-1  rounded-xl bg-background hover:bg-gray-900 text-muted-foreground",
+                  "flex items-center py-2 lg:px-6 px-2  lg:space-x-4 space-x-1 rounded-xl bg-background hover:bg-gray-900 text-muted-foreground",
                   matches && "bg-white"
                 )}
               >
-                <div className="w-5 h-5  relative">
+                <div className="lg:w-5 lg:h-5 h-3 w-3 relative">
                   <Image src={"/google.svg"} alt="svg" fill />
                 </div>
 
@@ -83,7 +83,7 @@ export default function Page() {
                   <p
                     className={cn(
                       "text-foreground max-md:text-sm",
-                      matches && "text-muted-foreground max-md:text-sm"
+                      matches && "text-muted-foreground"
                     )}
                   >
                     Sign In with Google
@@ -94,7 +94,7 @@ export default function Page() {
 
             <button
               className={cn(
-                "flex items-center py-2 lg:px-6 md:px-4 px-2  lg:space-x-4 md:space-x-2 space-x-1  rounded-xl bg-background hover:bg-gray-900 text-muted-foreground",
+                "flex items-center py-2 lg:px-6 px-4  lg:space-x-4 space-x-2 rounded-xl bg-background hover:bg-gray-900 text-muted-foreground",
                 matches && "bg-white"
               )}
               // variant={"ghost"}
@@ -111,8 +111,8 @@ export default function Page() {
               <div>
                 <p
                   className={cn(
-                    "text-foreground border",
-                    matches && "text-muted-foreground max-md:text-sm"
+                    "text-foreground",
+                    matches && "text-muted-foreground"
                   )}
                 >
                   Sign In with Apple
@@ -175,7 +175,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="flex w-full justify-around mt-4 bg-background-muted">
+          <div className="flex w-full justify-around mt-4">
             <div className="h-10 w-10 p-1 border rounded-[4rem] flex items-center justify-center bg-back hover:bg-gray-200 transition-all">
               <div className="h-8 w-8  relative">
                 <Image src={"/github.svg"} alt="svg" fill />

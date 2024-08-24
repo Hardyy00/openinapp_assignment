@@ -83,7 +83,7 @@ export default function Page() {
                   <p
                     className={cn(
                       "text-foreground max-md:text-sm",
-                      matches && "text-muted-foreground max-md:text-sm"
+                      matches && "text-muted-foreground"
                     )}
                   >
                     Sign In with Google
